@@ -1,1 +1,1 @@
-Readme file
+Scripts to change the background of Ubuntu with BingWallpaper everyday
