@@ -1,0 +1,14 @@
+[Unit]
+Description=BingWallpaper service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=gabriel
+ExecStart=/path/to/script.sh
+
+[Install]
+WantedBy=multi-user.target
