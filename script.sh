@@ -1,3 +1,3 @@
 #!/bin/bash
 
-jq -r '.[0].fullUrl' response.json
+curl -s https://peapix.com/bing/feed?country=jp | jq -r '.[0].fullUrl'
