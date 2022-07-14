@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "The script is running"
+jq -r '.[0].fullUrl' response.json
