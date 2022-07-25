@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Get the url from the API. Get the US wallpapers
-URL=$(curl -s https://peapix.com/bing/feed?country=us | jq -r '.[0].fullUrl')
+# Get the url from the Bing API. Get the AU wallpapers
+URL="https://www.bing.com$(curl -s https://www.bing.com/HPImageArchive.aspx?format=js\&idx=0\&n=1\&mkt=en-AU | jq -r '.images[0].url')
 
 curl -s $URL > $(pwd)/BingWallpaper.jpg
 
