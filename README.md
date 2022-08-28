@@ -11,13 +11,15 @@ This script changes the background of Ubuntu with BingWallpaper everyday. Right 
 
 Uses crontab to create a cronjob and run a script every day.
 
-Open crontab list with `sudo crontab -e`
+See contrab list with `crontab -l`
 
-Include the cronjob in the list. To define the time you can provide concrete values for minute (m), hour (h), day of month (dom), month (mon), and day of week (dow) or use '*' in these fields (for 'any').
+And edit crontab list with `crontab -e`
+
+Include the cronjob in the list. To define the time you can provide concrete values for minute (m), hour (h), day of month (dom), month (mon), and day of week (dow) or use '*' in these fields (for 'any'). You can check [crontab.guru](https://crontab.guru/) to practice cron time.
 
 `m h dom mon dow /path/to/script.sh`
 
-e.g. `0 0 * * * ~/Documents/BingWallpaper.sh`
+e.g. `0 8 * * * /bin/sh ~/Documents/BingWallpaper/BingWallpaper.sh`
 
 ### Start the cronjob service
 
